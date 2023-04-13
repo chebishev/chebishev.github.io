@@ -19,8 +19,9 @@ for (var i = 1; i <= certificatesCount; i++) {
     "click", function() {
         currentImage.src = this.src;
         currentImage.alt = this.alt;
-        imageThumbs.appendChild(thumb);
+        
     }
     );
+    imageThumbs.appendChild(thumb);
     }
 
