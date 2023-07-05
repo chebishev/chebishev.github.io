@@ -8,7 +8,7 @@ var dots = window.setInterval( function() {
 
 var imageThumbs = document.getElementById("image-thumbs");
 var currentImage = document.getElementById("current-image");
-const certificatesCount = 5
+const certificatesCount = 6
 
 for (var i = 1; i <= certificatesCount; i++) {
     var thumb = document.createElement("img");
