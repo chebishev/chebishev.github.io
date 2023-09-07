@@ -1,254 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Atanas Chebishev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    .w3-quarter img{margin-bottom: -6px; cursor: pointer}
+    .w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+    </style>
+  </head>
+<body class="w3-light-grey">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>chebishev.github.io</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Certificates</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a> 
+  <a href="others.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Other Certificates</a>
+</nav>
 
-    body {
-      margin: 0;
-      box-sizing: border-box;
-    }
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">chebishev</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
 
-    /* CSS for header */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #f5f5f5;
-    }
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-    .header .logo {
-      font-size: 25px;
-      font-family: 'Sriracha', cursive;
-      color: #000;
-      text-decoration: none;
-      margin-left: 30px;
-    }
-
-    .nav-items {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #f5f5f5;
-      margin-right: 20px;
-    }
-
-    .nav-items a {
-      text-decoration: none;
-      color: #000;
-      padding: 35px 20px;
-    }
-
-    /* CSS for main element */
-    .intro {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 520px;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('intro-bg.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .intro h1 {
-      font-family: sans-serif;
-      font-size: 60px;
-      color: #fff;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .intro p {
-      font-size: 20px;
-      color: #d1d1d1;
-      text-transform: uppercase;
-      margin: 20px 0;
-    }
-
-    .achievements {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 40px 80px;
-    }
-
-    .achievements .work {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 40px;
-    }
-
-    .achievements .work i {
-      width: fit-content;
-      font-size: 50px;
-      color: #333333;
-      border-radius: 50%;
-      border: 2px solid #333333;
-      padding: 12px;
-    }
-
-    .achievements .work .work-heading {
-      font-size: 20px;
-      color: #333333;
-      text-transform: uppercase;
-      margin: 10px 0;
-    }
-
-    .achievements .work .work-text {
-      font-size: 15px;
-      color: #585858;
-      margin: 10px 0;
-    }
-
-    /* CSS for footer */
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #302f49;
-      padding: 40px 80px;
-    }
-
-    .footer .copy {
-      color: #fff;
-    }
-
-    .bottom-links {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 40px 0;
-    }
-
-    .bottom-links .links {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 40px;
-    }
-
-    .bottom-links .links span {
-      font-size: 20px;
-      color: #fff;
-      text-transform: uppercase;
-      margin: 10px 0;
-    }
-
-    .bottom-links .links a {
-      text-decoration: none;
-      color: #a1a1a1;
-      padding: 10px 20px;
-    }
-
-    .intro {
-      text-align: center;
-      font-family: Arial;
-    }
-
-    h2 {
-      font-size: 36px;
-    }
-
-    p {
-      font-size: 14pt;
-    }
-
-    #image-gallery {
-      width: 600px;
-      margin: 0 auto;
-    }
-
-    #current-image {
-      width: 100%;
-    }
-
-    #image-thumbs {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .thumb {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      margin-right: 10px;
-      cursor: pointer;
-    }
-  </style>
-</head>
-
-<body>
-  <header class="header">
-    <a href="#" class="logo">chebishev</a>
-    <!-- <nav class="nav-items">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav> -->
-  </header>
-  <main>
-    <div class="intro">
-      <h1>Becoming Programmer<span id="wait">.</span></h1>
-      <p>I am a still learning, but I'll be happy to help, colaborate or work with you in your projects.</p>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="Certificates/00 JS Basics.jpg" style="width:100%" onclick="onClick(this)" alt="SoftUni JavaScript Basics certificate">
+      <img src="Certificates/04 Python OOP.jpg" style="width:100%" onclick="onClick(this)" alt="SoftUni Python OOP certificate">
+      <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="SoftUni HTML&CSS Fundamentals certificate"> -->
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="Certificates/01 Python Basics.jpg" style="width:100%" onclick="onClick(this)" alt="SoftUni Python Basics certificate">
+      <img src="Certificates/05 Python Web Basics.jpg" style="width:100%" onclick="onClick(this)" alt="SoftUni Python Web Basics certificate">
+      <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="JavaScript Front-End Fundamentals certificate"> -->
     </div>
-    <div class="achievements">
-      <div id="image-gallery">
-        <img id="current-image" src="images/image7.jpg" alt="Latest certificate">
-        
-        <div id="image-thumbs"></div>
-      </div>
-      <div class="work">
-        <i class="fas fa-atom"></i>
-        <p class="work-heading">Projects</p>
-        <ul>
-          <li><a href="http://www.rom-checker.site/">Xiaomi.eu Rom Checker APP</a></li>
-          <li>everything else is still in progress</li>
-          <li>but you can always check my public <a href="https://github.com/chebishev">repos</a></li>
-        </ul>
-      </div>
-      <div class="work">
-        <i class="fas fa-skiing"></i>
-        <p class="work-heading">Skills</p>
-        <p class="work-text">Programming with Python, Django framework, work with Docker (PostgreSQL, PgAdmin), HTML, CSS and currently learning JS, Java, Kotlin</p>
-      </div>
-<!--       <div class="work">
-        <i class="fas fa-ethernet"></i>
-        <p class="work-heading">Network</p>
-        <p class="work-text">- - -</p>
-      </div> -->
+    
+    <div class="w3-quarter">
+      <img src="Certificates/02 Python Fundamentals.jpg" style="width:100%" onclick="onClick(this)" alt="SoftUni Python Fundamentals certificate">
+      <img src="Certificates/06 Python Web Framework.jpg" style="width:100%" onclick="onClick(this)" alt="SoftUni Python Web Framework certificate">
+      <img src="#" style="width:100%" onclick="onClick(this)" alt="T">
     </div>
-  </main>
-  <footer class="footer">
-    <div class="copy">&copy; 2023 Chebishev</div>
-    <div class="bottom-links">
-      <!-- <div class="links">
-        <span>More Info</span>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div> -->
-      <div class="links">
-        <span>Social Links</span>
-        <a href="https://www.facebook.com/atanas.chebishev/"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/atanas-chebishev/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://t.me/chebisheff"><i class="fab fa-telegram"></i></a>
+ 
+    <div class="w3-quarter">
+      <img src="Certificates/03 Python Advanced.jpg" style="width:100%" onclick="onClick(this)" alt="SoftUni Python Advanced certificate">
+      <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="SoftUni Cyber Security Fundamentals certificate"> -->
+      <img src="#" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+  </div> 
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>Contact Me</b></h4>
+    <!-- <img src="#" alt="Me" class="w3-image w3-padding-32" width="600" height="650"> -->
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <!-- <h4>Atanas Chebishev</h4>
+      <p>I am from Plovdiv, Bulgaria</p> -->
+      <p>mail: atanas.chebishev@gmail.com</p>
+      <p>tel: +359877008765</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Technical Skills</h4>
+      <p class="w3-wide">IT Support</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Back-End</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide">Front-End</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">In progress...</div>
+      </div>
+      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resume</button></p>
+      <hr class="w3-opacity">
       </div>
     </div>
+  </div>
+
+  <footer>  
+    <div class="w3-black w3-center w3-padding-24">Made by chebishev™ 2023</div>
   </footer>
-  <script src="script.js"></script>
-</body>
+</div>
 
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
 </html>
