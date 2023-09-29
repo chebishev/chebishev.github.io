@@ -1,228 +1,226 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-  <title>Atanas Chebishev</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      font-family: "Raleway", sans-serif
-    }
+  <head>
+    <title>Atanas Chebishev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Raleway", sans-serif
+      }
 
-    .w3-quarter img {
-      margin-bottom: -6px;
-      cursor: pointer
-    }
+      .w3-quarter img {
+        margin-bottom: -6px;
+        cursor: pointer
+      }
 
-    .w3-quarter img:hover {
-      opacity: 0.6;
-      transition: 0.3s
-    }
+      .w3-quarter img:hover {
+        opacity: 0.6;
+        transition: 0.3s
+      }
 
-    a,
-    a:hover {
-      text-decoration: none;
-      color: whitesmoke;
-      padding-right: 17px;
-    }
-  </style>
-</head>
+      a,
+      a:hover {
+        text-decoration: none;
+        color: whitesmoke;
+        padding-right: 17px;
+      }
+    </style>
+  </head>
 
-<body class="w3-light-grey">
+  <body class="w3-light-grey">
 
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large"
-    style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
-    <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Certificates</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a>
-  </nav>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large"
+      style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+      <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Certificates</a>
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a>
+    </nav>
 
-  <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
-    <span class="w3-left w3-padding">chebishev</span>
-    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-  </header>
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+      <span class="w3-left w3-padding">chebishev</span>
+      <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
 
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+      id="myOverlay"></div>
 
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
-    <h1 class="w3-center w3-padding-32">Softuni Certificates</h1>
-    <div class="row">
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+      <h1 class="w3-center w3-padding-32">Softuni Certificates</h1>
+      <div class="row">
 
 
-      <div class="w3-quarter">
+        <div class="w3-quarter">
 
-        <img src="certificates/00 JS Basics.webp" style="width:100%" onclick="onClick(this)"
-          alt="SoftUni JavaScript Basics certificate">
+          <img src="certificates/00 JS Basics.webp" style="width:100%" onclick="onClick(this)"
+            alt="SoftUni JavaScript Basics certificate">
 
-        <img src="certificates/04 Python OOP.webp" style="width:100%" onclick="onClick(this)"
-          alt="SoftUni Python OOP certificate">
-        <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="SoftUni HTML&CSS Fundamentals certificate"> -->
+          <img src="certificates/04 Python OOP.webp" style="width:100%" onclick="onClick(this)"
+            alt="SoftUni Python OOP certificate">
+          <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="SoftUni HTML&CSS Fundamentals certificate"> -->
+        </div>
+
+        <div class="w3-quarter">
+
+          <img src="certificates/01 Python Basics.webp" style="width:100%" onclick="onClick(this)"
+            alt="SoftUni Python Basics certificate">
+
+          <img src="certificates/05 Python Web Basics.webp" style="width:100%" onclick="onClick(this)"
+            alt="SoftUni Python Web Basics certificate">
+          <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="JavaScript Front-End Fundamentals certificate"> -->
+        </div>
+
+        <div class="w3-quarter">
+
+          <img src="certificates/02 Python Fundamentals.webp" style="width:100%" onclick="onClick(this)"
+            alt="SoftUni Python Fundamentals certificate">
+          <img src="certificates/06 Python Web Framework.webp" style="width:100%" onclick="onClick(this)"
+            alt="SoftUni Python Web Framework certificate">
+          <img src="#" style="width:100%" onclick="onClick(this)" alt="">
+        </div>
+
+        <div class="w3-quarter">
+
+          <img src="certificates/03 Python Advanced.webp" style="width:100%" onclick="onClick(this)"
+            alt="SoftUni Python Advanced certificate">
+          <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="SoftUni Cyber Security Fundamentals certificate"> -->
+          <img src="#" style="width:100%" onclick="onClick(this)" alt="">
+        </div>
       </div>
+      <h2 class="w3-center w3-padding-32">Other Certificates</h2>
+      <div class="w3-row w3-grayscale-min">
+        <div class="w3-quarter">
+          <img src="certificates/99 PHP.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn PHP certificate">
+          <img src="certificates/94 Python Data Structures.webp" style="width:100%" onclick="onClick(this)"
+            alt="Sololearn Python Data Structures certificate">
+          <img src="certificates/95 JS Intermediate.webp" style="width:100%" onclick="onClick(this)"
+            alt="Sololearn JS Intermediate certificate">
+        </div>
+        <div class="w3-quarter">
+          <img src="certificates/98 Python for Beginners.webp" style="width:100%" onclick="onClick(this)"
+            alt="Sololearn Python for Beginners certificate">
+          <img src="certificates/93 Python Intermediate.webp" style="width:100%" onclick="onClick(this)"
+            alt="Sololearn Python Intermediate certificate">
+          <img src="certificates/89 Introduction to Java.webp" style="width:100%" onclick="onClick(this)"
+            alt="Sololearn Introduction to Java">
+          <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="#"> -->
+        </div>
 
-      <div class="w3-quarter">
+        <div class="w3-quarter">
+          <img src="certificates/97 Introduction to HTML.webp" style="width:100%" onclick="onClick(this)"
+            alt="Sololearn Introduction to HTML certificate">
+          <img src="certificates/92 SQL Introduction.webp" style="width:100%" onclick="onClick(this)"
+            alt="Sololearn SQL certificate">
+          <img src="certificates/90 JS Game Development.webp" style="width:100%" onclick="onClick(this)"
+            alt="Sololearn Game Development with JS">
+          <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="#"> -->
+        </div>
 
-        <img src="certificates/01 Python Basics.webp" style="width:100%" onclick="onClick(this)"
-          alt="SoftUni Python Basics certificate">
-
-        <img src="certificates/05 Python Web Basics.webp" style="width:100%" onclick="onClick(this)"
-          alt="SoftUni Python Web Basics certificate">
-        <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="JavaScript Front-End Fundamentals certificate"> -->
+        <div class="w3-quarter">
+          <img src="certificates/96 HTML.webp" style="width:100%" onclick="onClick(this)"
+            alt="Sololearn HTML certificate">
+          <img src="certificates/88 Introduction to JavaScript.webp" style="width:100%" onclick="onClick(this)"
+            alt="Sololearn Introduction to JavaScript">
+          <img src="certificates/91 Tech for everyone.webp" style="width:100%" onclick="onClick(this)"
+            alt="Sololearn Tech for everyone certificate">
+          <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt=""> -->
+        </div>
       </div>
+      <br>
+    </div>
 
-      <div class="w3-quarter">
-
-        <img src="certificates/02 Python Fundamentals.webp" style="width:100%" onclick="onClick(this)"
-          alt="SoftUni Python Fundamentals certificate">
-        <img src="certificates/06 Python Web Framework.webp" style="width:100%" onclick="onClick(this)"
-          alt="SoftUni Python Web Framework certificate">
-        <img src="#" style="width:100%" onclick="onClick(this)" alt="">
-      </div>
-
-      <div class="w3-quarter">
-
-        <img src="certificates/03 Python Advanced.webp" style="width:100%" onclick="onClick(this)"
-          alt="SoftUni Python Advanced certificate">
-        <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="SoftUni Cyber Security Fundamentals certificate"> -->
-        <img src="#" style="width:100%" onclick="onClick(this)" alt="">
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
       </div>
     </div>
-    <h2 class="w3-center w3-padding-32">Other Certificates</h2>
-    <div class="w3-row w3-grayscale-min">
-      <div class="w3-quarter">
-        <img src="certificates/99 PHP.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn PHP certificate">
-        <img src="certificates/94 Python Data Structures.webp" style="width:100%" onclick="onClick(this)"
-          alt="Sololearn Python Data Structures certificate">
-        <img src="certificates/95 JS Intermediate.webp" style="width:100%" onclick="onClick(this)"
-          alt="Sololearn JS Intermediate certificate">
-      </div>
-      <div class="w3-quarter">
-        <img src="certificates/98 Python for Beginners.webp" style="width:100%" onclick="onClick(this)"
-          alt="Sololearn Python for Beginners certificate">
-        <img src="certificates/93 Python Intermediate.webp" style="width:100%" onclick="onClick(this)"
-          alt="Sololearn Python Intermediate certificate">
-        <img src="certificates/89 Introduction to Java.webp" style="width:100%" onclick="onClick(this)"
-          alt="Sololearn Introduction to Java">
-        <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="#"> -->
-      </div>
 
-      <div class="w3-quarter">
-        <img src="certificates/97 Introduction to HTML.webp" style="width:100%" onclick="onClick(this)"
-          alt="Sololearn Introduction to HTML certificate">
-        <img src="certificates/92 SQL Introduction.webp" style="width:100%" onclick="onClick(this)"
-          alt="Sololearn SQL certificate">
-        <img src="certificates/90 JS Game Development.webp" style="width:100%" onclick="onClick(this)"
-          alt="Sololearn Game Development with JS">
-        <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt="#"> -->
-      </div>
-
-      <div class="w3-quarter">
-        <img src="certificates/96 HTML.webp" style="width:100%" onclick="onClick(this)"
-          alt="Sololearn HTML certificate">
-        <img src="certificates/88 Introduction to JavaScript.webp" style="width:100%" onclick="onClick(this)"
-          alt="Sololearn Introduction to JavaScript">
-        <img src="certificates/91 Tech for everyone.webp" style="width:100%" onclick="onClick(this)"
-          alt="Sololearn Tech for everyone certificate">
-        <!-- <img src="#" style="width:100%" onclick="onClick(this)" alt=""> -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+      <h4><b>Contact Me</b></h4>
+      <!-- <img src="#" alt="Me" class="w3-image w3-padding-32" width="600" height="650"> -->
+      <div class="w3-content w3-justify" style="max-width:600px">
+        <!-- <h4>Atanas Chebishev</h4>
+        <p>I am from Plovdiv, Bulgaria</p> -->
+        <p>mail: <a href="mailto:email@atanas.chebishev@gmail.com">atanas.chebishev@gmail.com</a></p>
+        <p>tel: <a href="tel:+359877008765">+359877008765</a></p>
+        <hr class="w3-opacity">
+        <h4 class="w3-padding-16">Technical Skills</h4>
+        <p class="w3-wide">IT Support</p>
+        <div class="w3-white">
+          <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+        </div>
+        <p class="w3-wide">Back-End</p>
+        <div class="w3-white">
+          <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide">Front-End</p>
+        <div class="w3-white">
+          <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">In progress...</div>
+        </div>
+        <p><a class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black"
+            href="pdf/Resume-Atanas-Chebishev.pdf" download="Resume-Atanas-Chebishev">Download Resume</a></p>
+        <hr class="w3-opacity">
       </div>
     </div>
-    <br>
-  </div>
 
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-    <h4><b>Contact Me</b></h4>
-    <!-- <img src="#" alt="Me" class="w3-image w3-padding-32" width="600" height="650"> -->
-    <div class="w3-content w3-justify" style="max-width:600px">
-      <!-- <h4>Atanas Chebishev</h4>
-      <p>I am from Plovdiv, Bulgaria</p> -->
-      <p>mail: <a href="mailto:email@atanas.chebishev@gmail.com">atanas.chebishev@gmail.com</a></p>
-      <p>tel: <a href="tel:+359877008765">+359877008765</a></p>
-      <hr class="w3-opacity">
-      <h4 class="w3-padding-16">Technical Skills</h4>
-      <p class="w3-wide">IT Support</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+    <footer>
+        <div class="w3-black w3-large w3-padding-16 w3-center">
+        <a href="https://github.com/chebishev" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-github w3-hover-opacity"></i></a>
+        <!-- <a href="https://chebishev.github.io/" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-link w3-hover-opacity"></i></a> -->
+        <a href="https://www.linkedin.com/in/atanas-chebishev" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <a href="https://facebook.com/atanas.chebishev" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-facebook w3-hover-opacity"></i></a>
+        <a href="https://t.me/chebisheff" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-telegram w3-hover-opacity"></i></i></a>
+        <p class="w3-margin-top">Made by chebishev™ 2023</p>
       </div>
-      <p class="w3-wide">Back-End</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
-      </div>
-      <p class="w3-wide">Front-End</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">In progress...</div>
-      </div>
-      <p><a class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black"
-          href="pdf/Resume-Atanas-Chebishev.pdf" download="Resume-Atanas-Chebishev">Download Resume</a></p>
-      <hr class="w3-opacity">
-    </div>
-  </div>
+    </footer>
 
-  <footer>
-      <div class="w3-black w3-large w3-padding-16 w3-center">
-      <a href="https://github.com/chebishev" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-github w3-hover-opacity"></i></a>
-      <!-- <a href="https://chebishev.github.io/" target="_blank" rel="noopener noreferrer"><i
-              class="fa fa-link w3-hover-opacity"></i></a> -->
-      <a href="https://www.linkedin.com/in/atanas-chebishev" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-      <a href="https://facebook.com/atanas.chebishev" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-facebook w3-hover-opacity"></i></a>
-      <a href="https://t.me/chebisheff" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-telegram w3-hover-opacity"></i> </i></a>
-      <p class="w3-margin-top">Made by chebishev™ 2023</p>
-    </div>
-  </footer>
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
 
-  <script>
-    // Script to open and close sidebar
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("myOverlay").style.display = "block";
-    }
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
 
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("myOverlay").style.display = "none";
-    }
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+    </script>
 
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-
-  </script>
-
-
-</body>
+  </body>
 
 </html>
