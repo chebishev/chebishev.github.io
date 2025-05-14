@@ -1,335 +1,395 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
-  <head>
-    <title>Atanas Chebishev</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-    <style>
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5 {
-        font-family: "Raleway", sans-serif
-      }
-      body {
-        min-height: 100vh;
-      }
+<head>
+  <title>Atanas Chebishev</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
 
-      body {
-        display: flex;
-        flex-direction: column;
-      }
+    body {
+      min-height: 100vh;
+    }
 
-      .w3-quarter img {
-        margin-bottom: -6px;
-        cursor: pointer
-      }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
 
-      .w3-quarter img:hover {
-        opacity: 0.6;
-        transition: 0.3s
-      }
+    .w3-quarter img {
+      margin-bottom: -6px;
+      cursor: pointer
+    }
 
-      a,
-      a:hover {
-        text-decoration: none;
-        color: whitesmoke;
-        padding-right: 17px;
-      }
+    .w3-quarter img:hover {
+      opacity: 0.6;
+      transition: 0.3s
+    }
 
-      .softuni_diplomas {
-        color: #234465
-      }
-      .softuni_diplomas:hover {
-        transform: scale(1.5);
-      }
+    a,
+    a:hover {
+      text-decoration: none;
+      color: whitesmoke;
+      padding-right: 17px;
+    }
 
-      .softtuni_certificates {
-        color: #c47a23;
-      }
+    .softuni_diplomas {
+      color: #234465
+    }
 
-      .udemy_certificates {
-        color: #6d28d2
-      }
+    .softuni_diplomas:hover {
+      transform: scale(1.5);
+    }
 
-      img {
-        padding: 0.3em 0.15em;
-      }
-      footer {
-        margin-top: auto;
-      }
-    </style>
-  </head>
+    .softtuni_certificates {
+      color: #c47a23;
+    }
 
-  <body class="w3-light-grey">
+    .udemy_certificates {
+      color: #6d28d2
+    }
 
-    <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
-      <span class="w3-left w3-padding">The Chebishev Code</span>
-    </header>
+    img {
+      padding: 0.3em 0.15em;
+    }
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="max-width:100%;margin-top:83px">
-        <button onclick="myFunction('ProjectsAccordion')" class="w3-btn w3-block w3-light-grey w3-left-align"><h1>PROJECTS</h1></button>
-      <div id="ProjectsAccordion" class="w3-hide w3-animate-zoom">
-        <a href="https://otepeto.com" class="w3-button w3-block w3-left-align">Plovdiv Youth Choir "oTEPETo"</a>
-        <a href="https://romchecker.pythonanywhere.com/" class="w3-button w3-block w3-left-align">Xiaomi.eu ROM Checker on Django</a>
-        <a href="https://english2bds.onrender.com/" class="w3-button w3-block w3-left-align">Accidental English Input to BDS</a>
-        <a href="https://chebishev.pythonanywhere.com/" class="w3-button w3-block w3-left-align">Random Programming Jokes on Flask</a>
-        <a href="https://fastapi-site-scraper.onrender.com/docs" class="w3-button w3-block w3-left-align">Site scraper on FastAPI</a>
-        <a href="https://github.com/chebishev/ReadTextFromImage" class="w3-button w3-block w3-left-align">Python/Tesseract OCR solution</a>
-        <a href="https://github.com/chebishev/imageToWepbBatchConvert" class="w3-button w3-block w3-left-align">Batch convert IMG to WEBP</a>
-        <a href="https://github.com/chebishev/AllXiaomiDeviceCodes" class="w3-button w3-block w3-left-align">Scrape all Xiaomi device codes</a>
-        <a href="https://github.com/chebishev/Console-Tic-Tac-Toe" class="w3-button w3-block w3-left-align">Console Tic Tac Toe</a>
-        <a href="https://github.com/chebishev/linkTrimmer" class="w3-button w3-block w3-left-align">YouTube/YT Music Link Trimmer</a>
-        <a href="https://github.com/chebishev?tab=repositories" class="w3-button w3-block w3-left-align">And many more... (private ones not included)</a>
-      </div>
-      <button onclick="myFunction('CertificatesAccordion')" class="w3-btn w3-block w3-light-grey w3-left-align"><h1>CERTIFICATES</h1></button>
-      <div id="CertificatesAccordion" class="w3-hide w3-animate-zoom">
-        <button onclick="myFunction('SoftuniDiplomas')" class="w3-btn w3-block w3-light-grey w3-left-align"><h2>SoftUni <span class="softuni_diplomas">Diplomas</span></h2></button>
-        <div id="SoftuniDiplomas" class="w3-container w3-hide">
-          
-          <div class="row">
-            <div class="w3-half">
-              <img src="diplomas/00 Python Web Developer.webp" style="width:100%" onclick="onClick(this)"
-                alt="SoftUni Python Web Developer diploma">
-            </div>
+    footer {
+      margin-top: auto;
+    }
+  </style>
+</head>
 
-            <div class="w3-half">
-              <img src="diplomas/01 Python Full-Stack Developer.webp" style="width:100%" onclick="onClick(this)"
-                alt="SoftUni Python Full-Stack Developer diploma">
-            </div>
-        </div>
-        </div>
-        <button onclick="myFunction('SoftuniCertificates')" class="w3-btn w3-block w3-light-grey w3-left-align"><h2>SoftUni <span class="softtuni_certificates">Certificates</span></h2></button>
-        <div id="SoftuniCertificates" class="w3-container w3-hide">
-      <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+<body class="w3-light-grey">
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+    <span class="w3-left w3-padding">The Chebishev Code</span>
+  </header>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="max-width:100%;margin-top:83px">
+    <button onclick="myFunction('ProjectsAccordion')" class="w3-btn w3-block w3-light-grey w3-left-align">
+      <h1>PROJECTS</h1>
+    </button>
+    <div id="ProjectsAccordion" class="w3-hide w3-animate-zoom">
+      <a href="https://otepeto.com" class="w3-button w3-block w3-left-align">Plovdiv Youth Choir "oTEPETo"</a>
+      <a href="https://romchecker.pythonanywhere.com/" class="w3-button w3-block w3-left-align">Xiaomi.eu ROM Checker on
+        Django</a>
+      <a href="https://allxiaomidevicecodes.onrender.com/docs" class="w3-button w3-block w3-left-align">All Xiaomi
+        Device Codes and Market Names on FastAPI</a>
+      <a href="https://english2bds.onrender.com/" class="w3-button w3-block w3-left-align">Accidental English Input to
+        BDS</a>
+      <a href="https://chebishev.pythonanywhere.com/" class="w3-button w3-block w3-left-align">Random Programming Jokes
+        on Flask</a>
+      <a href="https://fastapi-site-scraper.onrender.com/docs" class="w3-button w3-block w3-left-align">Site scraper on
+        FastAPI</a>
+      <a href="https://github.com/chebishev/ReadTextFromImage" class="w3-button w3-block w3-left-align">Python/Tesseract
+        OCR solution</a>
+      <a href="https://github.com/chebishev/imageToWepbBatchConvert" class="w3-button w3-block w3-left-align">Batch
+        convert IMG to WEBP</a>
+      <a href="https://github.com/chebishev/AllXiaomiDeviceCodes" class="w3-button w3-block w3-left-align">Scrape all
+        Xiaomi device codes</a>
+      <a href="https://github.com/chebishev/Console-Tic-Tac-Toe" class="w3-button w3-block w3-left-align">Console Tic
+        Tac Toe</a>
+      <a href="https://github.com/chebishev/linkTrimmer" class="w3-button w3-block w3-left-align">YouTube/YT Music Link
+        Trimmer</a>
+      <a href="https://github.com/chebishev?tab=repositories" class="w3-button w3-block w3-left-align">And many more...
+        (private ones not included)</a>
+    </div>
+    <button onclick="myFunction('CertificatesAccordion')" class="w3-btn w3-block w3-light-grey w3-left-align">
+      <h1>CERTIFICATES</h1>
+    </button>
+    <div id="CertificatesAccordion" class="w3-hide w3-animate-zoom">
+      <button onclick="myFunction('SoftuniDiplomas')" class="w3-btn w3-block w3-light-grey w3-left-align">
+        <h2>SoftUni <span class="softuni_diplomas">Diplomas</span></h2>
+      </button>
+      <div id="SoftuniDiplomas" class="w3-container w3-hide">
+
         <div class="row">
-  
-  
-          <div class="w3-quarter">
-            <img src="certificates/00 JS Basics.webp" style="width:100%" onclick="onClick(this)"
-              alt="SoftUni JavaScript Basics certificate">
-            <img src="certificates/04 Python OOP.webp" style="width:100%" onclick="onClick(this)"
-              alt="SoftUni Python OOP certificate">
-            <img src="certificates/08 HTML & CSS Fundamentals.webp" style="width:100%" onclick="onClick(this)" alt="SoftUni HTML&CSS Fundamentals certificate">
-            <img src="certificates/12 Containers and Cloud.webp" style="width:100%" onclick="onClick(this)" alt="SoftUni Containers and Cloud certificate">
-            <img src="certificates/16 Linux System Administration.webp" style="width:100%" onclick="onClick(this)" alt="Softuni Linux System Administration certificate">
-						<!-- <img src="certificates/20 Computer Networking Fundamentals.webp" style="width:100%" onclick="onClick(this)" alt="SoftUni Computer Networking Fundamentals certificate"> -->
+          <div class="w3-half">
+            <img src="diplomas/00 Python Web Developer.webp" style="width:100%" onclick="onClick(this)"
+              alt="SoftUni Python Web Developer diploma">
           </div>
-  
-          <div class="w3-quarter">
-            <img src="certificates/01 Python Basics.webp" style="width:100%" onclick="onClick(this)"
-              alt="SoftUni Python Basics certificate">
-            <img src="certificates/05 Python Web Basics.webp" style="width:100%" onclick="onClick(this)"
-              alt="SoftUni Python Web Basics certificate">
-            <img src="certificates/09 Software Fest.webp" style="width:100%" onclick="onClick(this)" alt="SoftUni coding fest. Build an app for 2 days. Project: https://github.com/DanieII/Payment-Service-Solution">
-            <img src="certificates/13 Software Engineering and DevOps.webp" style="width:100%" onclick="onClick(this)" alt="Softuni Software Engineering and DevOps certificate">
-            <img src="certificates/17 Intern & Team Lead Academy.webp" style="width:100%" onclick="onClick(this)" alt="Intern & Team Lead Academy (May 2024 - Oct 2024)">
-  
-          </div>
-  
-          <div class="w3-quarter">
-  
-            <img src="certificates/02 Python Fundamentals.webp" style="width:100%" onclick="onClick(this)"
-              alt="SoftUni Python Fundamentals certificate">
-            <img src="certificates/06 Python Web Framework.webp" style="width:100%" onclick="onClick(this)"
-              alt="SoftUni Python Web Framework certificate. Project: https://github.com/chebishev/XiaomiEuRomChecker">
-            <img src="certificates/10 JS Front-End.webp" style="width:100%" onclick="onClick(this)" alt="SoftUni JavaScript Front-End Advanced certificate">
-            <img src="certificates/14 Windows System Administration.webp" style="width:100%" onclick="onClick(this)" alt="Softuni Windows System Administration certificate">
-            <img src="certificates/18 Windows System Administration Advanced.webp" style="width:100%" onclick="onClick(this)" alt="Softuni Windows System Administration Advanced certificate">
-          </div>
-  
-          <div class="w3-quarter">
-            <img src="certificates/03 Python Advanced.webp" style="width:100%" onclick="onClick(this)"
-              alt="SoftUni Python Advanced certificate">
-            <img src="certificates/07 Introduction to Cyber Security.webp" style="width:100%" onclick="onClick(this)" alt="SoftUni Cyber Security Fundamentals certificate">
-            <img src="certificates/11 Intern & Team Lead Academy.webp" style="width:100%" onclick="onClick(this)" alt="Intern & Team Lead Academy (Nov 2023 - Feb 2024)">
-            <img src="certificates/15 Linux System Administration.webp" style="width:100%" onclick="onClick(this)" alt="Softuni Linux System Administration certificate">
-            <img src="certificates/19 Linux System Administration Advanced.webp" style="width:100%" onclick="onClick(this)" alt="Softuni Linux System Administration Advanced certificate">
-          </div>
-        </div>
-    </div>
-        </div>
-        <button onclick="myFunction('UdemyCertificates')" class="w3-btn w3-block w3-light-grey w3-left-align"><h2>udemy <span class="udemy_certificates">Certificates</span></h2></button>
-        <div id="UdemyCertificates" class="w3-container w3-hide">
-          <div class="w3-row w3-grayscale-min">
-            <div class="w3-quarter">
-              <img src="certificates/30 Complete FastAPI REST course.webp" style="width:100%" onclick="onClick(this)" alt="Udemy - Complete FastAPI REST course">
-              <img src="certificates/34" style="width:100%" onclick="onClick(this)" alt="">
-              <img src="certificates/38" style="width:100%" onclick="onClick(this)" alt="">
-              <img src="certificates/42" style="width:100%" onclick="onClick(this)" alt="">
-            </div>
-            <div class="w3-quarter">
-              <img src="certificates/31 The Complete Python Bootcamp From Zero to Hero in Python.webp" style="width:100%" onclick="onClick(this)" alt="Udemy - The Complete Python Bootcamp From Zero to Hero in Python">
-              <img src="certificates/35" style="width:100%" onclick="onClick(this)" alt="">
-              <img src="certificates/39" style="width:100%" onclick="onClick(this)" alt="">
-              <img src="certificates/43" style="width:100%" onclick="onClick(this)" alt="">
-            </div>
-            <div class="w3-quarter">
-              <img src="certificates/32 Solana Blockchain Developer Bootcamp.webp" style="width:100%" onclick="onClick(this)" alt="Udemy - Solana Blockchain Developer Bootcamp with Rust + JavaScript">
-              <img src="certificates/36" style="width:100%" onclick="onClick(this)" alt="">
-              <img src="certificates/40" style="width:100%" onclick="onClick(this)" alt="">
-              <img src="certificates/44" style="width:100%" onclick="onClick(this)" alt="">
-            </div>
-            <div class="w3-quarter">
-              <img src="certificates/33 Django Masterclass - Build 9 Real World Django Projects.webp" style="width:100%" onclick="onClick(this)" alt="Udemy - Django Masterclass : Build 9 Real World Django Projects">
-              <img src="certificates/37" style="width:100%" onclick="onClick(this)" alt="">
-              <img src="certificates/41" style="width:100%" onclick="onClick(this)" alt="">
-              <img src="certificates/45" style="width:100%" onclick="onClick(this)" alt="">
-            </div>
-          </div>
-        </div>
-        <button onclick="myFunction('SololearnCertificates')" class="w3-btn w3-block w3-light-grey w3-left-align"><h2>sololearn Certificates</h2></button>
-        <div id="SololearnCertificates" class="w3-container w3-hide">
-          <div class="w3-row w3-grayscale-min">
-            <div class="w3-quarter">
-              <img src="certificates/99 PHP.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn PHP certificate">
-              <img src="certificates/94 Python Data Structures.webp" style="width:100%" onclick="onClick(this)"
-                alt="Sololearn Python Data Structures certificate">
-              <img src="certificates/95 JS Intermediate.webp" style="width:100%" onclick="onClick(this)"
-                alt="Sololearn JS Intermediate certificate">
-              <img src="certificates/87 Coding Foundations.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Coding Foundations certificate">
-              <img src="certificates/83 Introduction to CSS.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Introduction to CSS">
-              <img src="certificates/79 Introduction to Python.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Introduction to Python">
-              <img src="certificates/75 C Intermediate.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn C Intermediate">
-              <img src="certificates/71 C Sharp Intermediate.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn C# Intermediate">
-            </div>
-            <div class="w3-quarter">
-              <img src="certificates/98 Python for Beginners.webp" style="width:100%" onclick="onClick(this)"
-                alt="Sololearn Python for Beginners certificate">
-              <img src="certificates/93 Python Intermediate.webp" style="width:100%" onclick="onClick(this)"
-                alt="Sololearn Python Intermediate certificate">
-              <img src="certificates/89 Introduction to Java.webp" style="width:100%" onclick="onClick(this)"
-                alt="Sololearn Introduction to Java">
-              <img src="certificates/86 Web Development.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Web Development">
-              <img src="certificates/82 Java Intermediate.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Java Intermediate">
-              <img src="certificates/78 Python Developer.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Python Developer">
-              <img src="certificates/74 Introduction to C++.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Introduction to C++">
-            </div>
-            <div class="w3-quarter">
-              <img src="certificates/97 Introduction to HTML.webp" style="width:100%" onclick="onClick(this)"
-                alt="Sololearn Introduction to HTML certificate">
-              <img src="certificates/92 SQL Introduction.webp" style="width:100%" onclick="onClick(this)"
-                alt="Sololearn SQL certificate">
-              <img src="certificates/90 JS Game Development.webp" style="width:100%" onclick="onClick(this)"
-                alt="Sololearn Game Development with JS">
-              <img src="certificates/85 Data Programming.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Coding for Data">
-              <img src="certificates/81 Angular.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Angular">
-              <img src="certificates/77 Kotlin.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Kotlin">
-              <img src="certificates/73 C++ Intermediate.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn C++ Intermediate">
-            </div>
-            <div class="w3-quarter">
-              <img src="certificates/96 HTML.webp" style="width:100%" onclick="onClick(this)"
-                alt="Sololearn HTML certificate">
-              <img src="certificates/88 Introduction to JavaScript.webp" style="width:100%" onclick="onClick(this)"
-                alt="Sololearn Introduction to JavaScript">
-              <img src="certificates/91 Tech for everyone.webp" style="width:100%" onclick="onClick(this)"
-                alt="Sololearn Tech for everyone certificate">
-              <img src="certificates/84 SQL Intermediate.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn SQL Intermediate certificate">
-              <img src="certificates/80 Front-end for Beginners.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Front-end for Beginners">
-              <img src="certificates/76 Introduction to C.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Introduction to C">
-              <img src="certificates/72 Introduction to C Sharp.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Introduction to C#">
-            </div>
-          </div>
-        </div>
-      </div>
-      <button onclick="myFunction('AboutMeAccordion')" class="w3-btn w3-block w3-light-grey w3-left-align"><h1>ABOUT ME</h1></button>
-      <div id="AboutMeAccordion" class="w3-hide w3-animate-zoom">
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-          <h4><b>Contact Me</b></h4>
-          <a href="mailto:atanas.chebishev@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                    <a href="tel:+359877008765"><i class="fa fa-phone" aria-hidden="true"></i></a>
-          <!-- <img src="#" alt="Me" class="w3-image w3-padding-32" width="600" height="650"> -->
-          <div class="w3-content w3-justify" style="max-width:600px">
-            <hr class="w3-opacity">
-            <h4 class="w3-padding-16">Technical Skills</h4>
-            <p class="w3-wide">IT Support</p>
-            <div class="w3-white">
-              <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
-            </div>
-            <p class="w3-wide">Back-End</p>
-            <div class="w3-white">
-              <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
-            </div>
-            <p class="w3-wide">Front-End</p>
-            <div class="w3-white">
-              <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
-            </div>
-            <p><a class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black"
-                href="pdf/Resume-Atanas-Chebishev.pdf" download="Resume-Atanas-Chebishev">Download Resume</a></p>
-          </div>
-        </div>
-      </div>
-      </div>
 
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-      <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption"></p>
+          <div class="w3-half">
+            <img src="diplomas/01 Python Full-Stack Developer.webp" style="width:100%" onclick="onClick(this)"
+              alt="SoftUni Python Full-Stack Developer diploma">
+          </div>
+        </div>
+      </div>
+      <button onclick="myFunction('SoftuniCertificates')" class="w3-btn w3-block w3-light-grey w3-left-align">
+        <h2>SoftUni <span class="softtuni_certificates">Certificates</span></h2>
+      </button>
+      <div id="SoftuniCertificates" class="w3-container w3-hide">
+        <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+          <div class="row">
+
+
+            <div class="w3-quarter">
+              <img src="certificates/00 JS Basics.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni JavaScript Basics certificate">
+              <img src="certificates/04 Python OOP.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni Python OOP certificate">
+              <img src="certificates/08 HTML & CSS Fundamentals.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni HTML&CSS Fundamentals certificate">
+              <img src="certificates/12 Containers and Cloud.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni Containers and Cloud certificate">
+              <img src="certificates/16 Linux System Administration.webp" style="width:100%" onclick="onClick(this)"
+                alt="Softuni Linux System Administration certificate">
+              <!-- <img src="certificates/20 Computer Networking Fundamentals.webp" style="width:100%" onclick="onClick(this)" alt="SoftUni Computer Networking Fundamentals certificate"> -->
+            </div>
+
+            <div class="w3-quarter">
+              <img src="certificates/01 Python Basics.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni Python Basics certificate">
+              <img src="certificates/05 Python Web Basics.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni Python Web Basics certificate">
+              <img src="certificates/09 Software Fest.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni coding fest. Build an app for 2 days. Project: https://github.com/DanieII/Payment-Service-Solution">
+              <img src="certificates/13 Software Engineering and DevOps.webp" style="width:100%" onclick="onClick(this)"
+                alt="Softuni Software Engineering and DevOps certificate">
+              <img src="certificates/17 Intern & Team Lead Academy.webp" style="width:100%" onclick="onClick(this)"
+                alt="Intern & Team Lead Academy (May 2024 - Oct 2024)">
+
+            </div>
+
+            <div class="w3-quarter">
+
+              <img src="certificates/02 Python Fundamentals.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni Python Fundamentals certificate">
+              <img src="certificates/06 Python Web Framework.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni Python Web Framework certificate. Project: https://github.com/chebishev/XiaomiEuRomChecker">
+              <img src="certificates/10 JS Front-End.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni JavaScript Front-End Advanced certificate">
+              <img src="certificates/14 Windows System Administration.webp" style="width:100%" onclick="onClick(this)"
+                alt="Softuni Windows System Administration certificate">
+              <img src="certificates/18 Windows System Administration Advanced.webp" style="width:100%"
+                onclick="onClick(this)" alt="Softuni Windows System Administration Advanced certificate">
+            </div>
+
+            <div class="w3-quarter">
+              <img src="certificates/03 Python Advanced.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni Python Advanced certificate">
+              <img src="certificates/07 Introduction to Cyber Security.webp" style="width:100%" onclick="onClick(this)"
+                alt="SoftUni Cyber Security Fundamentals certificate">
+              <img src="certificates/11 Intern & Team Lead Academy.webp" style="width:100%" onclick="onClick(this)"
+                alt="Intern & Team Lead Academy (Nov 2023 - Feb 2024)">
+              <img src="certificates/15 Linux System Administration.webp" style="width:100%" onclick="onClick(this)"
+                alt="Softuni Linux System Administration certificate">
+              <img src="certificates/19 Linux System Administration Advanced.webp" style="width:100%"
+                onclick="onClick(this)" alt="Softuni Linux System Administration Advanced certificate">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button onclick="myFunction('UdemyCertificates')" class="w3-btn w3-block w3-light-grey w3-left-align">
+        <h2>udemy <span class="udemy_certificates">Certificates</span></h2>
+      </button>
+      <div id="UdemyCertificates" class="w3-container w3-hide">
+        <div class="w3-row w3-grayscale-min">
+          <div class="w3-quarter">
+            <img src="certificates/30 Complete FastAPI REST course.webp" style="width:100%" onclick="onClick(this)"
+              alt="Udemy - Complete FastAPI REST course">
+            <img src="certificates/34" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="certificates/38" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="certificates/42" style="width:100%" onclick="onClick(this)" alt="">
+          </div>
+          <div class="w3-quarter">
+            <img src="certificates/31 The Complete Python Bootcamp From Zero to Hero in Python.webp" style="width:100%"
+              onclick="onClick(this)" alt="Udemy - The Complete Python Bootcamp From Zero to Hero in Python">
+            <img src="certificates/35" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="certificates/39" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="certificates/43" style="width:100%" onclick="onClick(this)" alt="">
+          </div>
+          <div class="w3-quarter">
+            <img src="certificates/32 Solana Blockchain Developer Bootcamp.webp" style="width:100%"
+              onclick="onClick(this)" alt="Udemy - Solana Blockchain Developer Bootcamp with Rust + JavaScript">
+            <img src="certificates/36" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="certificates/40" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="certificates/44" style="width:100%" onclick="onClick(this)" alt="">
+          </div>
+          <div class="w3-quarter">
+            <img src="certificates/33 Django Masterclass - Build 9 Real World Django Projects.webp" style="width:100%"
+              onclick="onClick(this)" alt="Udemy - Django Masterclass : Build 9 Real World Django Projects">
+            <img src="certificates/37" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="certificates/41" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="certificates/45" style="width:100%" onclick="onClick(this)" alt="">
+          </div>
+        </div>
+      </div>
+      <button onclick="myFunction('SololearnCertificates')" class="w3-btn w3-block w3-light-grey w3-left-align">
+        <h2>sololearn Certificates</h2>
+      </button>
+      <div id="SololearnCertificates" class="w3-container w3-hide">
+        <div class="w3-row w3-grayscale-min">
+          <div class="w3-quarter">
+            <img src="certificates/99 PHP.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn PHP certificate">
+            <img src="certificates/94 Python Data Structures.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Python Data Structures certificate">
+            <img src="certificates/95 JS Intermediate.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn JS Intermediate certificate">
+            <img src="certificates/87 Coding Foundations.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Coding Foundations certificate">
+            <img src="certificates/83 Introduction to CSS.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Introduction to CSS">
+            <img src="certificates/79 Introduction to Python.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Introduction to Python">
+            <img src="certificates/75 C Intermediate.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn C Intermediate">
+          </div>
+          <div class="w3-quarter">
+            <img src="certificates/98 Python for Beginners.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Python for Beginners certificate">
+            <img src="certificates/93 Python Intermediate.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Python Intermediate certificate">
+            <img src="certificates/89 Introduction to Java.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Introduction to Java">
+            <img src="certificates/86 Web Development.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Web Development">
+            <img src="certificates/82 Java Intermediate.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Java Intermediate">
+            <img src="certificates/78 Python Developer.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Python Developer">
+            <img src="certificates/74 Introduction to C++.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Introduction to C++">
+          </div>
+          <div class="w3-quarter">
+            <img src="certificates/97 Introduction to HTML.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Introduction to HTML certificate">
+            <img src="certificates/92 SQL Introduction.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn SQL certificate">
+            <img src="certificates/90 JS Game Development.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Game Development with JS">
+            <img src="certificates/85 Data Programming.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Coding for Data">
+            <img src="certificates/81 Angular.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Angular">
+            <img src="certificates/77 Kotlin.webp" style="width:100%" onclick="onClick(this)" alt="Sololearn Kotlin">
+            <img src="certificates/73 C++ Intermediate.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn C++ Intermediate">
+          </div>
+          <div class="w3-quarter">
+            <img src="certificates/96 HTML.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn HTML certificate">
+            <img src="certificates/88 Introduction to JavaScript.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Introduction to JavaScript">
+            <img src="certificates/91 Tech for everyone.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Tech for everyone certificate">
+            <img src="certificates/84 SQL Intermediate.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn SQL Intermediate certificate">
+            <img src="certificates/80 Front-end for Beginners.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Front-end for Beginners">
+            <img src="certificates/76 Introduction to C.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Introduction to C">
+            <img src="certificates/72 Introduction to C Sharp.webp" style="width:100%" onclick="onClick(this)"
+              alt="Sololearn Introduction to C#">
+          </div>
+        </div>
       </div>
     </div>
+    <button onclick="myFunction('AboutMeAccordion')" class="w3-btn w3-block w3-light-grey w3-left-align">
+      <h1>ABOUT ME</h1>
+    </button>
+    <div id="AboutMeAccordion" class="w3-hide w3-animate-zoom">
+      <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+        <h4><b>Contact Me</b></h4>
+        <a href="mailto:atanas.chebishev@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="tel:+359877008765"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <!-- <img src="#" alt="Me" class="w3-image w3-padding-32" width="600" height="650"> -->
+        <div class="w3-content w3-justify" style="max-width:600px">
+          <hr class="w3-opacity">
+          <h4 class="w3-padding-16">Technical Skills</h4>
+          <p class="w3-wide">IT Support</p>
+          <div class="w3-white">
+            <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+          </div>
+          <p class="w3-wide">Back-End</p>
+          <div class="w3-white">
+            <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+          </div>
+          <p class="w3-wide">Front-End</p>
+          <div class="w3-white">
+            <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+          </div>
+          <p><a class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black"
+              href="pdf/Resume-Atanas-Chebishev.pdf" download="Resume-Atanas-Chebishev">Download Resume</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <footer>
-        <div class="w3-black w3-large w3-padding-16 w3-center">
-        <a href="https://github.com/chebishev" target="_blank" rel="noopener noreferrer">
-          <i class="fa fa-github w3-hover-opacity"></i></a>
-        <!-- <a href="https://chebishev.github.io/" target="_blank" rel="noopener noreferrer"><i
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="w3-black w3-large w3-padding-16 w3-center">
+      <a href="https://github.com/chebishev" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-github w3-hover-opacity"></i></a>
+      <!-- <a href="https://chebishev.github.io/" target="_blank" rel="noopener noreferrer"><i
                 class="fa fa-link w3-hover-opacity"></i></a> -->
-        <a href="https://www.linkedin.com/in/atanas-chebishev" target="_blank" rel="noopener noreferrer">
-          <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-        <a href="https://facebook.com/atanas.chebishev" target="_blank" rel="noopener noreferrer">
-          <i class="fa fa-facebook w3-hover-opacity"></i></a>
-        <a href="https://t.me/chebisheff" target="_blank" rel="noopener noreferrer">
-          <i class="fa fa-telegram w3-hover-opacity"></i></i></a>
-        <p class="w3-margin-top"><a href="https://github.com/chebishev">© chebishev 2023</a></p>
-      </div>
-    </footer>
+      <a href="https://www.linkedin.com/in/atanas-chebishev" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://facebook.com/atanas.chebishev" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-facebook w3-hover-opacity"></i></a>
+      <a href="https://t.me/chebisheff" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-telegram w3-hover-opacity"></i></i></a>
+      <p class="w3-margin-top"><a href="https://github.com/chebishev">© chebishev 2023</a></p>
+    </div>
+  </footer>
 
-    <script>
-      // Script to open and close sidebar
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-      }
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
 
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-      }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
 
-      // Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+  <script>
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
       }
-    </script>
-    <script>
-      function myFunction(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else { 
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-      </script>
+    }
+  </script>
 
-  </body>
+</body>
 
 </html>
